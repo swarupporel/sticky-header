@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>demo</title>
+	<link rel="stylesheet" href="css/sp.stickyHeader.css">
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		#demo-header{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		#demo-header .header-top{
+			width: 100%;
+			height: 90px;
+			display: block;
+			background: #52b9cc;
+		}
+		#demo-header .header-bottom{
+			width: 100%;
+			height: 40px;
+			display: block;
+			background: #000;
+		}
+		.body-contain{
+			width: 100%;
+			height: 2000px;
+			display: inline-block;
+			background: #DDD;
+		}
+	</style>
+</head>
+<body>
+<header id="demo-header">
+	<section class="header-top"></section>
+	<section class="header-bottom"></section>
+</header>
+<section class="body-contain"></section>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/sp.stickyHeader.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#demo-header').spSticyheader({
+    	hideHeaderTarget: '.header-top',
+    	scrollHeader:200,
+    	customClass:'make-small',
+    	mobileHeader:true
+  	})
+});
+</script>
+</body>
+</html>
